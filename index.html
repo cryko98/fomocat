@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  FOMO CAT — $FOMOCAT
+  Before going live, replace the 3 placeholders below:
+    1. CONTRACT ADDRESS  -> search for: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    2. TELEGRAM LINK     -> search for: data-soon="telegram"
+    3. PUMP.FUN LINK     -> search for: PUMPFUN_LINK
+  ============================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fomo Cat ($FOMOCAT) — The cat that never blinks</title>
+  <meta name="description" content="Fomo Cat ($FOMOCAT) is a Solana memecoin born on pump.fun. Eyes wide open, 24/7, never missing a candle again. Fair launch, no presale, no team allocation." />
+  <meta name="theme-color" content="#07090f" />
+
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fomo Cat ($FOMOCAT) — The cat that never blinks" />
+  <meta property="og:description" content="A Solana memecoin born on pump.fun. Eyes wide open, 24/7. He missed one candle. Never again." />
+  <meta property="og:image" content="assets/fomocat.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fomo Cat ($FOMOCAT)" />
+  <meta name="twitter:description" content="The cat that never blinks. Solana. pump.fun. $FOMOCAT." />
+  <meta name="twitter:image" content="assets/fomocat.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="aurora" aria-hidden="true">
+    <span class="orb orb--1"></span>
+    <span class="orb orb--2"></span>
+    <span class="orb orb--3"></span>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <a class="brand" href="#top">
+      <img src="assets/icon.png" alt="" class="brand__img" />
+      <span class="brand__name">FOMO CAT</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#legend">Legend</a>
+      <a href="#traits">Traits</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#buy">How to buy</a>
+      <a href="#lives">Nine Lives</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--ghost btn--icon" href="#" data-soon="telegram" aria-label="Telegram">
+        <!-- Telegram -->
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M21.94 4.3 18.9 19.1c-.23 1.02-.84 1.27-1.7.79l-4.7-3.46-2.27 2.18c-.25.25-.46.46-.94.46l.33-4.78 8.7-7.86c.38-.34-.08-.53-.59-.19L6.98 13.02 2.34 11.6c-1.01-.31-1.03-1 .21-1.48L20.63 3.1c.84-.31 1.57.19 1.31 1.2Z"/></svg>
+      </a>
+      <a class="btn btn--primary" href="PUMPFUN_LINK" target="_blank" rel="noopener">Buy $FOMOCAT</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <span class="pill"><i class="dot"></i> Live on pump.fun · Solana</span>
+          <h1 class="hero__title">
+            He missed <em>one</em> candle.<br />
+            <span class="grad">Never again.</span>
+          </h1>
+          <p class="hero__lead">
+            Meet <strong>Fomo Cat</strong> — the little black cat whose pupils dilated at 3 AM
+            and never went back. He doesn't blink. He doesn't sleep. He just sits there,
+            eyes wide open, watching every chart on Solana at once.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="PUMPFUN_LINK" target="_blank" rel="noopener">
+              Buy on pump.fun
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#" data-soon="telegram">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21.94 4.3 18.9 19.1c-.23 1.02-.84 1.27-1.7.79l-4.7-3.46-2.27 2.18c-.25.25-.46.46-.94.46l.33-4.78 8.7-7.86c.38-.34-.08-.53-.59-.19L6.98 13.02 2.34 11.6c-1.01-.31-1.03-1 .21-1.48L20.63 3.1c.84-.31 1.57.19 1.31 1.2Z"/></svg>
+              Join Telegram
+            </a>
+          </div>
+
+          <!-- ⚠️ CONTRACT ADDRESS — replace the x's below with the real CA -->
+          <div class="ca" id="ca">
+            <span class="ca__label">CA</span>
+            <code class="ca__value" id="caValue">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code>
+            <button class="ca__copy" id="caCopy" aria-label="Copy contract address">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 9h10v10H9z M5 15V5h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Copy</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero__art">
+          <div class="cat" id="cat">
+            <div class="cat__halo"></div>
+            <img src="assets/fomocat-cut.png" alt="Fomo Cat — a small black cat with enormous glossy eyes and teal ears" />
+          </div>
+          <div class="hero__stats">
+            <div><b>0%</b><span>Tax</span></div>
+            <div><b>100%</b><span>Fair launch</span></div>
+            <div><b>0</b><span>Blinks</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>$FOMOCAT</span><i>😼</i><span>NEVER BLINK</span><i>👁️</i><span>EYES WIDE OPEN</span><i>😼</i>
+        <span>DON'T MISS IT AGAIN</span><i>👁️</i><span>SOLANA</span><i>😼</i><span>PUMP.FUN</span><i>👁️</i>
+        <span>$FOMOCAT</span><i>😼</i><span>NEVER BLINK</span><i>👁️</i><span>EYES WIDE OPEN</span><i>😼</i>
+        <span>DON'T MISS IT AGAIN</span><i>👁️</i><span>SOLANA</span><i>😼</i><span>PUMP.FUN</span><i>👁️</i>
+      </div>
+    </div>
+
+    <!-- ============ LEGEND ============ -->
+    <section class="section" id="legend">
+      <div class="wrap wrap--narrow reveal">
+        <span class="eyebrow">The Legend</span>
+        <h2 class="h2">Nine lives.<br />Eight of them spent chasing tops.</h2>
+
+        <div class="legend">
+          <p class="legend__lead">
+            Every trader has one chart they still think about. The one they watched,
+            hovered over, and closed.
+          </p>
+          <p>
+            Fomo Cat had that moment exactly once. Somewhere between 3 and 4 AM, a small black
+            kitten climbed onto a desk that wasn't his and looked at a screen that wasn't his,
+            and a green candle walked out of his life forever. His pupils went wide.
+            <strong>They never went back.</strong>
+          </p>
+          <p>
+            That's why his eyes look like that — two enormous polished mirrors that reflect
+            every chart on Solana at the same time. He doesn't blink, because a blink is
+            200 milliseconds of downtrend he didn't see. He doesn't sleep, because the market
+            doesn't. He just sits, paws neatly together, tail wrapped around himself, staring
+            into the candles.
+          </p>
+          <p>
+            The teal glow in his ears isn't fur. It's the light of a screen that was never
+            turned off.
+          </p>
+          <p>
+            He spent eight lives running after pumps that had already left. On the ninth,
+            he stopped running — sat down in front of the terminal, went completely still,
+            and let the chart come to <em>him</em>. It did. It always does, for the ones
+            who are still there at 3 AM.
+          </p>
+          <p class="legend__kicker">
+            Now he sits on Solana, on pump.fun, waiting for the rest of us to stop scrolling
+            and start staring.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRAITS ============ -->
+    <section class="section section--alt" id="traits">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow">Field guide</span>
+          <h2 class="h2">Know your cat</h2>
+          <p class="sub">Six observed behaviours of the specimen <em>Felis Fomoensis</em>.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <div class="card__icon">👁️</div>
+            <h3>The Stare</h3>
+            <p>Eyes at 400% dilation, permanently. Sees green candles forming three blocks before they print.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🌙</div>
+            <h3>Zero Sleep</h3>
+            <p>Awake in every timezone at once. Asia session, US open, weekend chop — he's there for all of it.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🐾</div>
+            <h3>Silent Paws</h3>
+            <p>Enters positions without a sound. You never hear him buy. You only see the wick afterwards.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">💎</div>
+            <h3>Claws In</h3>
+            <p>Nine lives, zero exits. He doesn't panic sell — he can't, his paws are folded too neatly.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">📡</div>
+            <h3>Teal Ears</h3>
+            <p>Two antennas tuned to the sound of a bonding curve filling. Twitches 4 seconds before you get the alert.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">😼</div>
+            <h3>No Whitepaper</h3>
+            <p>He can't read. He can only stare. Somehow this has been the superior strategy all cycle.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOKENOMICS ============ -->
+    <section class="section" id="tokenomics">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow">Tokenomics</span>
+          <h2 class="h2">Simple, like a cat</h2>
+          <p class="sub">Launched on pump.fun. No presale, no team wallet, no games.</p>
+        </div>
+
+        <div class="tokenomics">
+          <div class="tok reveal">
+            <b>$FOMOCAT</b>
+            <span>Ticker</span>
+          </div>
+          <div class="tok reveal">
+            <b>1,000,000,000</b>
+            <span>Total supply</span>
+          </div>
+          <div class="tok reveal">
+            <b>0 / 0</b>
+            <span>Buy / sell tax</span>
+          </div>
+          <div class="tok reveal">
+            <b>Burned</b>
+            <span>Liquidity</span>
+          </div>
+          <div class="tok reveal">
+            <b>Revoked</b>
+            <span>Mint authority</span>
+          </div>
+          <div class="tok reveal">
+            <b>0%</b>
+            <span>Team allocation</span>
+          </div>
+        </div>
+
+        <div class="note reveal">
+          <strong>Fair launch, the pump.fun way.</strong>
+          Everyone bought on the same curve — including the cat. There is no allocation to unlock,
+          no vesting cliff, no "strategic partner" waiting to dump on you. Just a token, a chart,
+          and a very large pair of eyes watching it.
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO BUY ============ -->
+    <section class="section section--alt" id="buy">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow">How to buy</span>
+          <h2 class="h2">Four steps. Then stare.</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step__n">01</span>
+            <h3>Get a Solana wallet</h3>
+            <p>Install <a href="https://phantom.app" target="_blank" rel="noopener">Phantom</a> or
+            <a href="https://solflare.com" target="_blank" rel="noopener">Solflare</a> on your phone or as a browser extension. Write down your seed phrase, on paper, and never type it anywhere.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step__n">02</span>
+            <h3>Fund it with SOL</h3>
+            <p>Buy SOL on any exchange and send it to your wallet address, or use the in-wallet card option. Leave a little SOL for fees.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step__n">03</span>
+            <h3>Open pump.fun</h3>
+            <p>Go to the $FOMOCAT page, connect your wallet, and always double-check the contract address against the one on this site before swapping.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step__n">04</span>
+            <h3>Swap and don't blink</h3>
+            <p>Enter your amount, confirm the transaction, and welcome to the stare. Then come sit with the rest of us in the Telegram.</p>
+          </article>
+        </div>
+
+        <div class="buy-cta reveal">
+          <a class="btn btn--primary btn--lg" href="PUMPFUN_LINK" target="_blank" rel="noopener">Take me to pump.fun</a>
+          <a class="btn btn--ghost btn--lg" href="#" data-soon="telegram">Join the stare</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NINE LIVES / ROADMAP ============ -->
+    <section class="section" id="lives">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow">Roadmap</span>
+          <h2 class="h2">The Nine Lives</h2>
+          <p class="sub">He used eight already. This is what he does with the last one.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__tag">Life IX · Phase 1</span>
+            <h3>The Stare</h3>
+            <p>Fair launch on pump.fun. The chart appears. The eyes open. First holders arrive, the Telegram fills up, and nobody sleeps.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__tag">Phase 2</span>
+            <h3>The Twitch</h3>
+            <p>Ears go up. Memes everywhere, community raids, first listings and trackers. Curve fills, liquidity migrates and gets burned.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__tag">Phase 3</span>
+            <h3>The Pounce</h3>
+            <p>Trending across Solana. Sticker packs, a proper meme arsenal, collabs with other cats of questionable financial judgement.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__tag">Phase 4</span>
+            <h3>The Zoomies</h3>
+            <p>3 AM in every timezone at once. Fomo Cat is no longer a token, he is a feeling — the one you get when you didn't buy.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section--alt" id="faq">
+      <div class="wrap wrap--narrow">
+        <div class="reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2 class="h2">Questions the cat won't answer</h2>
+        </div>
+
+        <div class="faq reveal">
+          <details>
+            <summary>What is $FOMOCAT?</summary>
+            <p>A community memecoin on Solana, launched on pump.fun. No utility, no roadmap to a SaaS product, no revenue share. It's a cat with enormous eyes and a chart.</p>
+          </details>
+          <details>
+            <summary>Is there a presale or team allocation?</summary>
+            <p>No. It was a fair launch on the pump.fun bonding curve — everyone, including the team, bought on the open market like everybody else.</p>
+          </details>
+          <details>
+            <summary>What's the contract address?</summary>
+            <p>It's at the top of this page, with a copy button. Only trust the CA published here and in the official Telegram — anything sent to you in a DM is a scam.</p>
+          </details>
+          <details>
+            <summary>Where can I buy it?</summary>
+            <p>On pump.fun with any Solana wallet. Once the bonding curve fills, it also trades on the usual Solana DEXs and aggregators.</p>
+          </details>
+          <details>
+            <summary>Why does he look like that?</summary>
+            <p>He saw a green candle he didn't buy. That was several years ago. The pupils never went back down.</p>
+          </details>
+          <details>
+            <summary>Will he ever blink?</summary>
+            <p>No.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMMUNITY ============ -->
+    <section class="section community">
+      <div class="wrap wrap--narrow reveal">
+        <img class="community__cat" src="assets/icon.png" alt="" />
+        <h2 class="h2">Come sit with the cat</h2>
+        <p class="sub">
+          No investors, no board meetings, no roadmap slides. Just a very awake cat and
+          a group chat that never goes quiet.
+        </p>
+        <div class="hero__cta hero__cta--center">
+          <a class="btn btn--primary btn--lg" href="#" data-soon="telegram">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21.94 4.3 18.9 19.1c-.23 1.02-.84 1.27-1.7.79l-4.7-3.46-2.27 2.18c-.25.25-.46.46-.94.46l.33-4.78 8.7-7.86c.38-.34-.08-.53-.59-.19L6.98 13.02 2.34 11.6c-1.01-.31-1.03-1 .21-1.48L20.63 3.1c.84-.31 1.57.19 1.31 1.2Z"/></svg>
+            Telegram
+          </a>
+          <a class="btn btn--ghost btn--lg" href="PUMPFUN_LINK" target="_blank" rel="noopener">pump.fun</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <img src="assets/icon.png" alt="" />
+        <div>
+          <b>FOMO CAT</b>
+          <span>$FOMOCAT · Solana</span>
+        </div>
+      </div>
+      <p class="footer__disclaimer">
+        $FOMOCAT is a meme coin with no intrinsic value or expectation of financial return.
+        There is no formal team or roadmap. It is entirely useless and for entertainment purposes only.
+        Crypto assets are volatile — never invest more than you can afford to lose, and always
+        do your own research.
+      </p>
+      <p class="footer__copy">© <span id="year">2026</span> Fomo Cat. Still not blinking.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
