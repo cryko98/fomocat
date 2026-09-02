@@ -12,13 +12,13 @@ Nincs build lépés, nincs függőség — sima HTML + CSS + JS.
 | `script.js` | CA másolás, toast, mobil menü, scroll animációk, kurzort követő macska |
 | `assets/` | `fomocat-cut.png` (átlátszó hátterű macska), `icon.png` (favicon/logó), `fomocat.png` (eredeti, OG kép) |
 
-## Élesítés előtt cseréld ki
+## Élő adatok az oldalon
 
-1. **Contract address** — `index.html`, keresd: `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx` (1 helyen van)
-2. ~~**Telegram link**~~ — kész: `https://t.me/FOMOCATSOLS` (4 helyen).
-3. **pump.fun link** — `index.html`, keresd: `PUMPFUN_LINK` (4 helyen van).
-   Cseréld erre: `https://pump.fun/coin/<CA>`.
-   (Amíg placeholder marad, a JS automatikusan a `https://pump.fun` főoldalra irányít.)
+- **CA:** `6uYRrUWJ6ggydj1KGSgGUSCFeBG77JbQvDkCnwFxpump` (hero, copy gombbal)
+- **Telegram:** `https://t.me/FOMOCATSOLS` (4 gomb)
+- **pump.fun:** `https://pump.fun/coin/6uYRrUWJ6ggydj1KGSgGUSCFeBG77JbQvDkCnwFxpump` (4 gomb)
+
+Mindegyik sima szövegként van az `index.html`-ben, kereséssel bármikor cserélhető.
 
 Ha később X/Twitter is lesz, a Telegram gomb mintájára bemásolható egy második gomb.
 

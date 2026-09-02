@@ -86,11 +86,6 @@
     });
   });
 
-  /* pump.fun links that still hold the placeholder */
-  document.querySelectorAll('a[href="PUMPFUN_LINK"]').forEach(function (el) {
-    el.setAttribute("href", "https://pump.fun");
-  });
-
   /* ---------- sticky header ---------- */
   var header = document.getElementById("header");
   function onScroll() {
